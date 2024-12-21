@@ -1,0 +1,140 @@
+.more-details {
+    padding: 10px 50px 0px 50px;
+}
+
+.top-section {
+    padding: 30px 0px 50px 0px;
+}
+
+.backBtn {
+    height: 50px;
+    font-size: xx-large;
+    border: none;
+    color: #3a5b22;
+    background-color: transparent;
+}
+
+.columns {
+    height: 100%;
+
+    margin-right: 20px;
+    /* Adds space between columns */
+}
+
+.columns-last {
+    height: 100%;
+    /* Adds space between columns */
+}
+
+.eventImage {
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    inline-size: 100%;
+}
+
+.event-details {
+    border: 3px solid #557140;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.details-Title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #4F6D3A;
+}
+
+.details-Value {
+    font-size: 20px;
+    font-weight:400;
+    color: black;
+}
+
+.bookBtn{
+    background-color: #3A5B22;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.Description {
+    height: 80%;
+    background-color: #9cba87;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Schedule{
+    background-color: #9cba87;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.Rating{
+    /* background-color: #9cba87; */
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    height: 80%;
+}
+
+.submitBtn{
+    background-color: #3A5B22;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.w-100 {
+    width: 90%;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #6d825e;
+}
+
+  
+
+  /* Container to ensure full height */
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Top Section */
+  .top-section {
+    margin-bottom: 20px;
+  }
+
+  
+  /* Full height and gap between columns */
+  .my-4 {
+    display: flex;
+    gap: 15px;  /* This ensures there is a gap between the columns */
+    height: calc(100vh - 100px); /* Subtract the height of the top section */
+  }
+  
+  /* Make the feedback container scrollable */
+  .feedback-container {
+    max-height: 730px;
+    overflow-y: auto;
+    padding-right: 10px; 
+  }
+  

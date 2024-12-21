@@ -1,0 +1,117 @@
+
+.header_1{
+    font-size: 80px;
+    color: #3A5B22;
+    margin: 80px;
+  }
+
+  .p{
+    justify-content: end;
+  }
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+
+  }
+
+
+  .bordered-card {
+    padding: 20px;
+    color: #3A5B22;
+    border: 3px solid #3A5B22;
+    width: 80%;
+  }
+  
+
+  .border-right-column {
+    border-right: 3px solid #3A5B22;
+  }
+
+  .custom-row {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .custom-col {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .custom-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .custom-button {
+    background-color: #889C7A;
+    color: white;
+    width: 150px;
+    height: 150px;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  
+  
+  .custom-button-about {
+    background-color: #587443;
+    color: white;
+    width: 150px;
+    height: 150px;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+
+  .custom-button-login {
+    background-color: #3a5b22;
+    color: white;
+    width: 150px;
+    height: 150px;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+
+  .custom-card-border {
+    border: px solid #3A5B22;
+    color: #3A5B22;
+    padding: 40px;
+  }
+  
+  
+
+  .custom-heading {
+    font-size: 50px;
+    color: #3A5B22; 
+    text-align: center; 
+    margin-bottom: 50px; 
+  }
+  
+
+  .custom-paragraph {
+    color: black;          
+    text-align: justify;   
+    line-height: 1.6;      
+    margin-bottom: 1rem;  
+  }
+  
