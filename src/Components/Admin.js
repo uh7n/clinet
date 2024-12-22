@@ -65,7 +65,7 @@ const Admin = () => {
     if (window.confirm("Are you sure to delete the Event!!!") == true) {
       dispatch(deleteEvent(EventId)).then(() => {
         dispatch(getEvent());
-        window.location.reload(); // Refresh the page
+        // window.location.reload(); // Refresh the page
       });
     }
   };
@@ -74,7 +74,7 @@ const Admin = () => {
     if (window.confirm("Are you sure to delete the User!!!") == true) {
       dispatch(deleteUser(UserId)).then(() => {
         dispatch(allUser());
-        window.location.reload(); // Refresh the page
+        // window.location.reload(); // Refresh the page
       });
     }
   };
