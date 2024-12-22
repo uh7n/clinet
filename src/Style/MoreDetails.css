@@ -133,7 +133,7 @@ button:hover {
   
   /* Make the feedback container scrollable */
   .feedback-container {
-    max-height: 730px;
+    max-height: 630px;
     overflow-y: auto;
     padding-right: 10px; 
   }
