@@ -4,7 +4,7 @@ import axios from "axios";
 // Async thunk to insert a new user
 export const insertUser = createAsyncThunk("user/insertUser",async (userData) => {
     try {
-      const response = await axios.post("http://localhost:8080/insertUser", {
+      const response = await axios.post("https://server-euce.onrender.com/insertUser", {
         name: userData.name,
         email: userData.email,
         password: userData.password,
@@ -21,7 +21,7 @@ export const insertUser = createAsyncThunk("user/insertUser",async (userData) =>
 // Async thunk to get user data
 export const getUser = createAsyncThunk("user/getUser", async (userData) => {
   try {
-    const response = await axios.post("http://localhost:8080/Login", {
+    const response = await axios.post("https://server-euce.onrender.com/Login", {
       email: userData.email,
       password: userData.password,
     });
@@ -34,7 +34,7 @@ export const getUser = createAsyncThunk("user/getUser", async (userData) => {
 
 export const allUser = createAsyncThunk("user/allUser", async () => {
   try {
-    const response = await axios.get("http://localhost:8080/allUser");
+    const response = await axios.get("https://server-euce.onrender.com/allUser");
     return response.data.users;
   } catch (error) {
     console.error(error);
@@ -45,7 +45,7 @@ export const allUser = createAsyncThunk("user/allUser", async () => {
 // Async thunk to update user data
 export const updateUser = createAsyncThunk("user/updateUser", async (userData) => {
     try {
-      const response = await axios.put("http://localhost:8080/updateUser", {
+      const response = await axios.put("https://server-euce.onrender.com/updateUser", {
         name: userData.name,
         email: userData.email,
         password: userData.password,
@@ -62,7 +62,7 @@ export const updateUser = createAsyncThunk("user/updateUser", async (userData) =
 // Async thunk to handle logout
 export const logout = createAsyncThunk("user/logout", async () => {
   try {
-    const response = await axios.post("http://localhost:8080/logout");
+    const response = await axios.post("https://server-euce.onrender.com/logout");
     return response.data;
   } catch (error) {
     console.log(error);
@@ -77,7 +77,7 @@ export const deleteUser = createAsyncThunk(
   async (eventId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8080/deleteUser/${eventId}`
+        `https://server-euce.onrender.com/deleteUser/${eventId}`
       );
       return response.data;
     } catch (error) {
@@ -92,7 +92,7 @@ export const resetPassword = createAsyncThunk(
     try {
       console.log("Payload sent to backend for resetPassword:", payload); // Debugging log
 
-      const response = await fetch("http://localhost:8080/resetPassword", {
+      const response = await fetch("https://server-euce.onrender.com/resetPassword", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -117,7 +117,7 @@ export const updateUserName = createAsyncThunk(
   async (payload, { rejectWithValue }) => {
     try {
       console.log("Payload sent to backend:", payload); // Debugging log
-      const response = await fetch("http://localhost:8080/updateUserName", {
+      const response = await fetch("https://server-euce.onrender.com/updateUserName", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
