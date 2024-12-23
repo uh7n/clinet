@@ -6,7 +6,7 @@ export const insertEvent = createAsyncThunk(
   "Eventcount/insertEvent",
   async (EventData) => {
     try {
-      const response = await axios.post("http://localhost:8080/insertEvent", {
+      const response = await axios.post("https://server-euce.onrender.com/insertEvent", {
         name: EventData.name,
         description: EventData.description,
         date: EventData.date,
@@ -33,7 +33,7 @@ export const getEventById = createAsyncThunk(
   "Eventcount/getEventById",
   async (eventId)=> {
     try {
-      const response = await axios.get(`http://localhost:8080/getEvent/${eventId}`)
+      const response = await axios.get(`https://server-euce.onrender.com/getEvent/${eventId}`)
       console.log(response.data)
       return response.data;
     } catch (error) {
@@ -45,7 +45,7 @@ export const getEventById = createAsyncThunk(
 // Get events
 export const getEvent = createAsyncThunk("Eventcount/getEvent", async () => {
   try {
-    const response = await axios.get("http://localhost:8080/getEvents");
+    const response = await axios.get("https://server-euce.onrender.com/getEvents");
     return response.data.events;
   } catch (error) {
     console.error(error);
