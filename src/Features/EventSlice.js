@@ -57,7 +57,7 @@ export const updateEvent = createAsyncThunk(
   "Eventcount/updateEvent",
   async ({id,data}, { rejectWithValue }) => {
     try {
-      const response = await axios.put("http://localhost:8080/updateEvent", {
+      const response = await axios.put("https://server-euce.onrender.com/updateEvent", {
         eventId : id,
         ...data,
       });
@@ -76,7 +76,7 @@ export const deleteEvent = createAsyncThunk(
   async (eventId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8080/deleteEvent/${eventId}`
+        `https://server-euce.onrender.com/deleteEvent/${eventId}`
       );
       return response.data;
     } catch (error) {
