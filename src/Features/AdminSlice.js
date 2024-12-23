@@ -4,7 +4,7 @@ import axios from "axios";
 // Admin login async action
 export const getAdmin = createAsyncThunk("administration/getAdmin", async (adminData) => {
     try {
-      const response = await axios.post("http://localhost:8080/AdminLogin", {
+      const response = await axios.post("https://server-euce.onrender.com/AdminLogin", {
         email: adminData.email,
         password: adminData.password,
       });
@@ -20,7 +20,7 @@ export const getAdmin = createAsyncThunk("administration/getAdmin", async (admin
 // Admin logout async action
 export const Logout = createAsyncThunk("administration/Logout", async () => {
     try {
-      const response = await axios.post("http://localhost:8080/Logout");
+      const response = await axios.post("https://server-euce.onrender.com/Logout");
       return response.data;
     } catch (error) {
       alert("Logout Error: " + error);
